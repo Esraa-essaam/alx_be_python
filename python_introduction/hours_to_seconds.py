@@ -1,6 +1,6 @@
 hours = 2
-minutes = 60
-seconds = 60
+
+
 
 
 #there are 3600 seconds in an hour 
