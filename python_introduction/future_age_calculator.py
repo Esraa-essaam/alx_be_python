@@ -1,3 +1,11 @@
-user_age = int(input("How old are you?\n"))
-age = 27 + user_age
-print(f"In 2050, you will be {age} years old")
+
+age = int(input("How old are you?"))
+
+
+#future_years = int(input("How many years into the future do you want to calculate your age?"))
+
+
+future_age = age + 27
+
+
+print(f"In 2025 years, you will be {future_age} years old.")
