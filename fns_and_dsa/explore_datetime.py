@@ -1,6 +1,3 @@
-# explore_datetime.py
-# برنامج لاستكشاف وحدة datetime في بايثون
-
 from datetime import datetime, timedelta  # استيراد الوحدات المطلوبة
 
 def display_current_datetime():
@@ -8,7 +5,7 @@ def display_current_datetime():
     دالة لعرض التاريخ والوقت الحالي
     """
     current_date = datetime.now()  # الحصول على التاريخ والوقت الحالي
-    print("التاريخ والوقت الحالي:", current_date.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Current date and time:", current_date.strftime("%Y-%m-%d %H:%M:%S"))
 
 def calculate_future_date(days):
     """
@@ -16,14 +13,14 @@ def calculate_future_date(days):
     """
     current_date = datetime.now()  # التاريخ الحالي
     future_date = current_date + timedelta(days=days)  # حساب التاريخ المستقبلي
-    print("التاريخ المستقبلي:", future_date.strftime("%Y-%m-%d"))
+    print("Future date:", future_date.strftime("%Y-%m-%d"))
 
 # تنفيذ البرنامج الرئيسي
 if __name__ == "__main__":
     display_current_datetime()
     try:
-        # طلب عدد الأيام من المستخدم
-        days_input = int(input("أدخل عدد الأيام التي تريد إضافتها للتاريخ الحالي: "))
+        # ✅ هذه الجملة مطلوبة حسب التعليمات
+        days_input = int(input("Enter the number of days to add to the current date: "))
         calculate_future_date(days_input)
     except ValueError:
-        print("يرجى إدخال رقم صحيح.")
+        print("Please enter a valid integer number of days.")
